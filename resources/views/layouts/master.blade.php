@@ -23,6 +23,7 @@
                     <div class="row" style="height:75px;padding-top:50px;padding-left:20px;">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <small style="vertical-align: bottom;font-size:12px;font-weight: bold">- A strong desire or urge to wander or travel and explore the world</small>
+                            <img class="imgSempro" src="images/sempro-logo.png" />
                         </div>
                     </div>
                     <div class="row">

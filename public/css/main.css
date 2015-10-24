@@ -89,6 +89,11 @@ ul#ulMenu a:hover {
 
 /* Shared */
 
+.imgSempro {
+    height:100px;
+    float:right;
+}
+
 .hrSpace {
     display: block;
     height: 1px;

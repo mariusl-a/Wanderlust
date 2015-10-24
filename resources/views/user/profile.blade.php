@@ -79,6 +79,7 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Upload Image From Instagram</h2>
+            <small>Click on a image and it will be uploaded and sent to admins for further approval.</small>
             <div id="divInstaPhotos"></div>
         </div>
     </div>
