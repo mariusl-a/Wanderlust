@@ -27,6 +27,7 @@ user@sempro.no  | Test1234
 
 1. I assume you have Composer and Laravel installed (Fresh Install)
 2. Download and copy the files in this project over to your Laravel project.
+
         /app/Http/Controllers
                 - AdminController.php
                 - ImageController.php
@@ -44,6 +45,7 @@ user@sempro.no  | Test1234
                 - admin Folder
                 - home.blade.php
                 - about.blade.php
+                
 3. Make sure you edit your database.php file in the config folder (/config/database.php)
 
 ## Known Bugs
