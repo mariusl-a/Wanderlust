@@ -27,27 +27,11 @@ user@sempro.no  | Test1234
 
 1. I assume you have Composer and Laravel installed (Fresh Install)
 2. Download and copy the files in this project over to your Laravel project.
-
-        /app/Http/Controllers
-                - AdminController.php
-                - ImageController.php
-                - InstagramController.php
-        /app/Http/
-                - routes.php
-        /public
-                - js Folder
-                - images Folder
-                - css Folder
-        /resources/views
-                - user Folder
-                - layouts Folder
-                - auth Folder
-                - admin Folder
-                - home.blade.php
-                - about.blade.php
-                
-3. Make sure you edit your database.php file in the config folder (/config/database.php)
+3. Make sure you edit your **database.php** file in the **config** folder.
+4. Run the database migrations using the **php artisan migrate** command.
 
 ## Known Bugs
+- Newly registered users might experience some errors when uploading images. Logging off and on again seems to solve the issue.
 
 ## Future Improvements
+- Add a column named **source** on the **images** table is from (From Device/Instagram)
