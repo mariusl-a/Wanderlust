@@ -1,0 +1,101 @@
+body {
+    background-color:#ff7517; /*#312F32*/
+    font-family: 'Quicksand', sans-serif;
+} 
+
+#divContent {
+    background-color: whitesmoke;
+    padding: 20px 10px 20px 10px;
+}
+
+/* Menu */
+#divHeader {
+    margin-top: 20px;
+    height:200px;
+    background-color:white;    
+}
+
+#ulMenu h1 {
+    display: inline;
+    margin:0;
+    padding:0;
+}
+
+ul#ulMenu li {
+    display:inline;
+    margin-right:8px;
+}
+
+ul#ulMenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+}
+
+ul#ulMenu a:hover {
+    text-decoration: underline;
+}
+
+/* End: Menu */
+
+/* Footer */
+
+#divFooter {
+    padding:20px;
+    margin-bottom:100px;
+    text-align: center;
+    font-weight: bold;  
+    color:black;  
+}
+
+/* Content */
+
+#divContent {
+    
+    background-color:whitesmoke;
+}
+
+/* Home */
+.divImages img {
+    width:370px;
+    height:200px;
+    margin-bottom:10px;
+}
+
+/* End Home */
+
+/* Login */
+
+/* Profile */
+
+.divInstaPhoto {
+    height:400px;
+}
+
+.divInstaPhoto img {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+}   
+
+/* End Profile */
+
+/* Admin */
+
+#divAdminPhotos div:first-of-type {
+    margin-bottom:10px;
+}
+
+
+
+/* Shared */
+
+.hrSpace {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+/* End shared */
