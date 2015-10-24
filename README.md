@@ -1,31 +1,37 @@
 # Wanderlust
-1. Download Composer
-curl -sS https://getcomposer.org/installer | php
+This is a small Laravel application made for Sempro.
 
-2. Run Composer to create-project
-php composer.phar create-project laravel/laravel Wanderlust
+### Libaries used in this project
+- Composer
+- Laravel 
+- Instagram API
+- jQuery
+- Bootstrap
 
-3. Copy files..
-/app/Http/Controllers
-- AdminController.php
-- ImageController.php
-- InstagramController.php
+## Demo
+Feel free to test the application here: http://larsen-asp.no/Wanderlust/Wanderlust/public/
 
-/app/Http/
-- routes.php
+**Administrator Account**
 
-/public
-- js folder
-- images folder
-- css folder
+Username  | Password
+------------- | -------------
+admin@sempro.no  | Test1234
 
-/resources/views
-- user folder
-- layouts folder
-- auth folder
-- admin folder
-- home.blade.php
-- about.blade.php
+**Test User Account**
 
-4. Update database.php with database connection information(DB_HOST, DB_DATABASE, DB_USERNAME and DB_PASSWORD) for MySQL.
-File found in config/database.php
+Username  | Password
+------------- | -------------
+user@sempro.no  | Test1234
+
+## Installation
+
+1. I assume you have Composer and Laravel installed (Fresh Install)
+2. Download and copy the files in this project over to your Laravel project.
+3. Make sure you edit your **database.php** file in the **config** folder.
+4. Run the database migrations using the **php artisan migrate** command.
+
+## Known Bugs
+- Newly registered users might experience some errors when uploading images. Logging off and on again seems to solve the issue.
+
+## Future Improvements
+- Add a column named **source** on the **images** table is from (From Device/Instagram)
