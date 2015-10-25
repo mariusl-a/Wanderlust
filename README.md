@@ -31,6 +31,7 @@ Username  | Password
 user@sempro.no  | Test1234
 
 ### What is working?
+- It's responsive! Tested on iPhone, iPad and PC using Chrome, IE and Firefox. 
 - Sign Up (Create a user).
 - Users can login by email and password.
 - Users can connect to Instagram.
