@@ -33,8 +33,8 @@ user@sempro.no  | Test1234
 ### What is working?
 - Sign Up (Create a user).
 - Users can login by email and password.
-- Users can connect their instagram account.
-- Users can upload images either from their device or their connected instagram account.
+- Users can connect to Instagram.
+- Users can upload images from their device or Instagram Account.
 - Users can Log Out.
 - Home / Front page will show images that has been approved by an Admin.
 - Admins can open the Admin page. 
