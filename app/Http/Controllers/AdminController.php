@@ -94,10 +94,12 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        DB::table('images')
-            ->where('id', $id)
-            ->update(['confirmed' => 1, 'updated_at' => Carbon::now()->toDateTimeString()]);
-        return Response::json(array('approved' => true));
+        if($request->user() && $request->user()->admin) {
+            DB::table('images')
+                ->where('id', $id)
+                ->update(['confirmed' => 1, 'updated_at' => Carbon::now()->toDateTimeString()]);
+            return Response::json(array('approved' => true));
+        }
     }
 
     /**
@@ -106,9 +108,11 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        DB::table('images')->where('id', $id)->delete();
-        return Response::json(array('deleted' => true));
+        if($request->user() && $request->user()->admin) {
+            DB::table('images')->where('id', $id)->delete();
+            return Response::json(array('deleted' => true));
+        }
     }
 }
