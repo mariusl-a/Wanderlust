@@ -1,3 +1,4 @@
+// Method used when uploading photo fra instagram - by URL
 function photoUpload(url) {
     console.log("Uploading "+ url);
     $.ajax({
@@ -12,6 +13,8 @@ function photoUpload(url) {
 
 $(document).ready(function() {
     var access_token, instagram_username;
+    
+    // This will get the last 12 images from their instagram account (if an account is connected)
     $.get( 'instagram/0', function(data) {
         if(data.hasOwnProperty('access_token')) {
             access_token = data.access_token;
@@ -34,26 +37,31 @@ $(document).ready(function() {
                         $('#divInstaPhotos').append('<div class="col-md-4 divInstaPhoto"><img src="' + item.images.standard_resolution.url + '" width="300" /><p>' + item.caption.text + '</p></div>');
                     });
                     
+                    // Mouseover effect to fade in the color
                     $('.divInstaPhoto img').mouseover(function() {
                        $(this).fadeTo( "fast", 1 );
                     });
                     
+                    // Mouseout effect to fadeout color
                     $('.divInstaPhoto img').mouseout(function() {
                         $(this).fadeTo( "fast", 0.4 );
                     });
                     
+                    // Activates the click event for each image for instagram upload
                     $('.divInstaPhoto img').click(function() {
                         photoUpload($(this).attr('src'));
                     });
                     
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
+                    // Maybe instagram API has some problems? 
                     alert('Something when wrong when loading instagram photos, please try again soon!');
                 }
             });
         }
     });
     
+    // Button is "hidden" - But a user would be able to remove the instagram connection
     $('#btn-instagram-disconnect').click(function() {
         $.ajax({
             url: 'instagram',
